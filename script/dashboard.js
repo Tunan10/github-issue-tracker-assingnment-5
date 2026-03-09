@@ -1,3 +1,15 @@
+let allIssues = [];
+
+const loadIssues = () => {
+  fetch('https://phi-lab-server.vercel.app/api/v1/lab/issues')
+    .then(res => res.json())
+    .then(data => {
+      allIssues = data.data;
+      displayIssues(allIssues);
+    })
+    .catch(err => console.error(err));
+};
+
 function toggleStyle(id) {
   const allbtn = document.getElementById('all-btn');
   const openbtn = document.getElementById('open-btn');
