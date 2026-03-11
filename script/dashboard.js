@@ -52,7 +52,7 @@ const displayIssues = issues => {
           </span>
         </div>
 
-        <h3"
+        <h3>
             class="font-bold text-slate-800 text-lg leading-snug mb-2 cursor-pointer hover:text-blue-600">
           ${issue.title}
         </h3>
