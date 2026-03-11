@@ -32,7 +32,7 @@ const displayIssues = issues => {
     const div = document.createElement('div');
 
     div.innerHTML = `
-      <div onclick="openModal(${issue.id})" class="cursor-pointer bg-white p-6 flex flex-col h-full rounded-xl shadow-lg border-t-4
+       <div onclick="openModal(${issue.id})" class="cursor-pointer bg-white p-6 flex flex-col h-full rounded-xl shadow-lg border-t-4
       ${issue.status === 'open' ? 'border-emerald-500' : 'border-violet-500'}">
 
         <div class="flex justify-between items-start mb-4">
@@ -52,7 +52,7 @@ const displayIssues = issues => {
           </span>
         </div>
 
-        
+        <h3"
             class="font-bold text-slate-800 text-lg leading-snug mb-2 cursor-pointer hover:text-blue-600">
           ${issue.title}
         </h3>
